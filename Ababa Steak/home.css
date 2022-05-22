@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #de5946;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px;
+    display: flex;
+}
+
+.nav-link a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: white;
+    color: black;
+}
+
+.nav-link-items {
+    padding: 10px;
+}
+
+.logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    background-color: #f4eae9;
+    width: 100%;
+}
+
+/* .slide .welcome .welcome-info {
+    text-align: center;
+    display: block;
+} */
+
+#prev,
+#next {
+    border: none;
+    padding: 1% 1.5%;
+    background-color: #969e2e;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+}
+
+.slider-container {
+    width: auto;
+    display: flex;
+}
+
+.slider {
+    /* height: 800px;
+    width: 100%;
+    overflow: hidden;
+    position: relative; */
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 90%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.slider div.slides {
+    position: relative;
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slider div.slides div.slide {
+    width: 50%;
+    height: 800px;
+    float: left;
+    position: relative;
+    text-align: center;
+    background-color: black;
+}
+
+/* .slides {
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.slide {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    float: left;
+} */
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 0.5;
+}
+
+/* .img1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.img2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+} */
+
+.welcome-parent {
+    /* z-index: 10;
+    text-align: center;
+    top: 50%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+.welcome {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(255, 213, 213);
+}
+
+.welcome-info {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 213, 213);
+}
+
+.menu-general {
+    background-color: #f6a18c;
+    margin-bottom: 20px;
+}
+
+.menu-description {
+    display: flex;
+    flex-direction: row;
+    margin: 35px;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.menu-choice {
+    width: 49%;
+    margin: auto;
+    font-size: 25px;
+}
+
+.menu-choice img {
+    width: 100%;
+}
+
+.button {
+    background-color: #969e2e;
+    border: none;
+    box-shadow: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button1 {
+    text-align: center;
+}
+
+.button2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-and-reserve {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-us {
+    width: 50%;
+    align-items: center;
+    padding: 10%;
+}
+
+.about-us-title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.about-us-desc {
+    font-size: 20px;
+    text-align: center;
+}
+
+.reserve {
+    width: 50%;
+    align-items: center;
+    padding: 10%;
+}
+
+.reserve-title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.reserve-desc {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and(max-width:1180px) {
+    .menu-choice img {
+        max-width: 25px;
+        max-height: 25px;
+    }
+}
+
+/* @media only screen and(max-width:662px) { */
+/* .button {
+        /* padding: 5px 5px; */
+/* font-size: 10px; */
+/* } */
+/* .reserve .button3 {
+        padding: 10px 22px;
+        font-size: 10px;
+    } */
+/* } */
+
+/* @media only screen and(max-width: 677px) {
+    .button {
+        background-color: #969e2e;
+        border: none;
+        box-shadow: black;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+} */
+
+@media only screen and (max-width: 1113px) {
+    /* .slide {
+    } */
+}
+
+@media only screen and (max-width: 677px) {
+    .nav-link a {
+        font-size: 15px;
+    }
+    .navbar {
+        background-color: #de5946;
+        display: block;
+        align-items: center;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px;
+    }
+
+    .nav-link-items {
+        padding: 10px;
+    }
+    .button {
+        background-color: #969e2e;
+        border: none;
+        box-shadow: black;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .menu-choice {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 597px) {
+    .about-us-title {
+        font-size: 15px;
+    }
+    .about-us-desc {
+        font-size: 10px;
+    }
+    .reserve-title {
+        font-size: 15px;
+    }
+    .reserve-desc {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .welcome {
+        font-size: 25px;
+    }
+    .welcome-info {
+        font-size: 25px;
+    }
+    .menu-title {
+        font-size: 25px;
+    }
+}
+
+footer {
+    background-color: #de5946;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerkanan {
+    display: flex;
+    align-items: center;
+}
+
+.footerkanan img {
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+}
+
+.footerkiri {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.footerkiri p {
+    font-size: 14px;
+}
+
+.footerkiri img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}

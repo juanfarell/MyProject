@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/ababa-logo.png" />
+        <title>ABABA's Reservation Page</title>
+        <link rel="stylesheet" href="reservation.css" />
+        <script defer src="./reservation.js"></script>
+    </head>
+    <body>
+        
+        <div class="navbar">
+            <div class="logo">
+                <img src="./assets/logo ababa formal.png" alt="" />
+            </div>
+
+            <div class="nav-link">
+                <div class="nav-link-items">
+                    <a href="home.html">HOME</a>
+                </div>
+                <div class="nav-link-items">
+                    <a href="menu.html">MENU</a>
+                </div>
+                <div class="nav-link-items">
+                    <a href="promo.html">PROMO</a>
+                </div>
+                <div class="nav-link-items">
+                    <a href="aboutus.html">ABOUT US</a>
+                </div>
+                <div class="nav-link-items">
+                    <a href="reservation.html">RESERVATION</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="reservation-greeting">
+                <h3>Reservation Page</h3>
+                <p>
+                    Please fill in the details below to book a spot for your
+                    meal.
+                </p>
+            </div>
+        </div>
+
+        <div class="reserve">
+            <form name= "registration" method="POST" action="./reservation.html">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="" />
+                <br />
+                <label for="phonenumber">Phone Number: </label>
+                <input type="text" name="phonenumber" id="" />
+                <br />
+                <label for="useremail">Email: </label>
+                <input type="text" name="useremail" id="useremail">
+                <br>
+                <label for="member">Are you a VIP of ABABA?</label>
+                <input type="radio" name="member" id="">
+                Yes
+                <input type="radio" name="member" id="">
+                No
+                <br>
+                <label for="numberofpersons">Number of Persons: </label>
+                <input type="number" min="1" max="8" name="numberofpersons" id="" />
+                <br />
+                <label for="date">Date of Reservation: </label>
+                <input type="date" id="dateMinimum" min="today" name="date" id="" />
+                <br />
+                <label for="time">Time of the Date: </label>
+                <input type="time" min="11:30" max="21:00" name="time" id="" />
+                <br />
+                <label for="couponcode">Coupon Code (if available): </label>
+                <input type="text" name="couponcode" id="" />
+                <br />
+                <label for="occassion">Any Other Requests? </label>
+                <textarea name="occassion" id="" cols="30" rows="10" placeholder="This Section is Optional."></textarea>
+                <br>
+                <br>
+                <input
+                    type="submit"
+                    class="button"
+                    value="Confirm Reservation"
+                />
+            </form>
+            <br />
+        </div>
+
+        <div id="error-message"></div>
+    </body>
+
+    <footer>
+        <div class="footerkiri">
+            <img src="./assets/ababa steakhouse asset.png" alt="" />
+            <p>©ABABA Steak 2000/2020</p>
+        </div>
+        <div class="footerkanan">
+            <a href="https://www.instagram.com">
+                <img src="./assets/ig-logo.png" alt="" />
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="./assets/yt-logo.png" alt="" />
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="./assets/facebook-logo.png" alt="" />
+            </a>
+        </div>
+    </footer>
+</html>

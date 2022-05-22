@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px;
+    display: flex;
+}
+
+.nav-link-items {
+    padding: 10px;
+}
+
+.navbar {
+    background-color: #de5946;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: white;
+    color: black;
+}
+
+.logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.gambar {
+    width: 100%;
+    left: 10%;
+}
+
+.available-promo {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./assets/steakonfork.jpg");
+    background-size: cover;
+    justify-content: center;
+    padding: 100px;
+    text-align: center;
+    font-size: medium;
+    color: rgb(255, 213, 213);
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.flexcolumn {
+    width: 50%;
+    margin: auto 0;
+    margin-left: 40px;
+}
+
+.box {
+    width: max-content;
+    height: max-content;
+    background: #f7a48b;
+    border-radius: 10%;
+}
+
+footer {
+    background-color: #de5946;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerkanan {
+    display: flex;
+    align-items: center;
+}
+
+.footerkanan img {
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+}
+
+.footerkiri {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.footerkiri p {
+    font-size: 14px;
+}
+
+.footerkiri img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 677px) {
+    .nav-link a {
+        font-size: 15px;
+    }
+    .navbar {
+        background-color: #de5946;
+        display: block;
+        align-items: center;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px;
+    }
+
+    .nav-link-items {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .available-promo {
+        font-size: 10px;
+    }
+    .flexcolumn {
+        font-size: 10px;
+    }
+}
